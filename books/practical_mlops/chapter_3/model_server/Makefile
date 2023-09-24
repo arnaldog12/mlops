@@ -1,3 +1,6 @@
+docker-lint:
+	@docker run --rm -i hadolint/hadolint < Dockerfile
+
 docker-build:
 	@docker build --build-arg VERSION=1.0 -t flask-predict . 
 
